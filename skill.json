@@ -1,0 +1,70 @@
+{
+  "name": "trello",
+  "displayName": "Trello",
+  "description": "Manage Trello boards, lists, and cards via the Trello API. Perfect for agent-human project collaboration. Verified by SecureSkills with 8.5/10 trust score.",
+  "version": "1.0.0",
+  "author": "OrionSecureSkills",
+  "publisher": "SecureSkills",
+  "keywords": ["trello", "project-management", "tasks", "kanban", "productivity", "verified"],
+  "tools": [
+    {
+      "name": "trello_boards_list",
+      "description": "List all Trello boards accessible to the user"
+    },
+    {
+      "name": "trello_board_get",
+      "description": "Get details of a specific board including lists and cards"
+    },
+    {
+      "name": "trello_board_create",
+      "description": "Create a new Trello board"
+    },
+    {
+      "name": "trello_list_create",
+      "description": "Create a new list in a board"
+    },
+    {
+      "name": "trello_card_create",
+      "description": "Create a new card in a list"
+    },
+    {
+      "name": "trello_card_move",
+      "description": "Move a card to a different list"
+    },
+    {
+      "name": "trello_card_update",
+      "description": "Update card title, description, or due date"
+    },
+    {
+      "name": "trello_card_archive",
+      "description": "Archive a card"
+    }
+  ],
+  "config": {
+    "apiKey": {
+      "description": "Trello API Key from https://trello.com/app-key",
+      "required": true
+    },
+    "token": {
+      "description": "Trello API Token (generate at https://trello.com/app-key)",
+      "required": true
+    }
+  },
+  "requirements": ["A Trello account and API credentials"],
+  "security": {
+    "trustScore": 8.5,
+    "riskLevel": "medium",
+    "verified": true,
+    "audited": "2026-01-31",
+    "auditor": "SecureSkills",
+    "permissions": ["network", "filesystem"],
+    "credentialStorage": "~/.config/trello/credentials.json",
+    "notes": [
+      "Zero external dependencies",
+      "Scoped filesystem access (config only)",
+      "Network limited to api.trello.com",
+      "No shell execution",
+      "Credentials stored with 600 permissions"
+    ]
+  }
+}

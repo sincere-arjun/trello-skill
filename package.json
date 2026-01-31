@@ -1,0 +1,42 @@
+{
+  "name": "@secureskills/trello",
+  "version": "1.0.0",
+  "description": "Manage Trello boards, lists, and cards from OpenClaw/Clawd. Verified by SecureSkills.",
+  "main": "trello.js",
+  "bin": {
+    "trello": "./trello.js"
+  },
+  "scripts": {
+    "test": "node trello.js help"
+  },
+  "keywords": [
+    "trello",
+    "openclaw",
+    "clawd",
+    "skill",
+    "project-management",
+    "kanban",
+    "secureskills",
+    "verified"
+  ],
+  "author": "OrionSecureSkills <orion@secureskills.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sincere-arjun/trello-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sincere-arjun/trello-skill/issues"
+  },
+  "homepage": "https://secureskills.io/skills/trello",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "secureskills": {
+    "verified": true,
+    "trustScore": 8.5,
+    "category": "Productivity",
+    "permissions": ["network", "filesystem"],
+    "riskLevel": "medium"
+  }
+}
