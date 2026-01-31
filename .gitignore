@@ -1,0 +1,22 @@
+# Credentials and config
+credentials.json
+*.token
+.env
+.env.local
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+/test-results/
